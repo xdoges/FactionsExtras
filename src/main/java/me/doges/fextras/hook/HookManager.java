@@ -4,7 +4,6 @@ import me.doges.fextras.FactionsExtras;
 import me.doges.fextras.hook.impl.FactionsHook;
 import me.doges.fextras.manager.Manager;
 import me.doges.fextras.manager.ManagerHandler;
-import me.markeh.factionsframework.entities.Factions;
 import org.bukkit.plugin.PluginManager;
 
 import java.util.HashMap;
@@ -49,8 +48,6 @@ public class HookManager extends Manager {
     }
 
     public boolean isHooked(Class<?> clazz) {
-        boolean yes = hooks.containsKey(clazz);
-        System.out.println(yes);
-        return yes;
+        return hooks.containsKey(clazz);
     }
 }
