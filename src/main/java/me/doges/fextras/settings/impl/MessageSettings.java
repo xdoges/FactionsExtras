@@ -14,6 +14,7 @@ public class MessageSettings implements ISettings {
     private String PLAYER_ONLY_COMMAND;
     private String PLAYER_NOT_FOUND;
     private String COMMAND_NOT_ENABLED;
+    private String NUMBER_EXCEPTION;
 
     // Command specific
     private String PING_SELF_MESSAGE;
@@ -43,6 +44,7 @@ public class MessageSettings implements ISettings {
         PLAYER_ONLY_COMMAND = plugin.c().getMessage("PLAYER_ONLY_COMMAND");
         PLAYER_NOT_FOUND = plugin.c().getMessage("PLAYER_NOT_FOUND");
         COMMAND_NOT_ENABLED = plugin.c().getMessage("COMMAND_NOT_ENABLED");
+        NUMBER_EXCEPTION = plugin.c().getMessage("NUMBER_EXCEPTION");
 
         // Command specific
         PING_SELF_MESSAGE = plugin.c().getMessage("PING_SELF_MESSAGE");
@@ -57,6 +59,10 @@ public class MessageSettings implements ISettings {
 
         JELLY_LEGS_ENABLED = plugin.c().getMessage("JELLY_LEGS_ENABLED");
         JELLY_LEGS_DISABLED = plugin.c().getMessage("JELLY_LEGS_DISABLED");
+    }
+
+    public String numberException() {
+        return NUMBER_EXCEPTION;
     }
 
     public String enabledJellyLegs() {

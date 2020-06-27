@@ -3,6 +3,7 @@ CONSOLE_ONLY_COMMAND: "&cThis command can only be performed by console."
 PLAYER_ONLY_COMMAND: "&cConsole cannot execute this command."
 PLAYER_NOT_FOUND: "&c&l(!) &7We could not find &c%target% &7on the server."
 COMMAND_NOT_ENABLED: "&c&l(!) &7Sorry, but &c/%command% &7is currently disabled."
+NUMBER_EXCEPTION: "&c&l(!) &7Sorry, but the specified amount must be a positive integer."
 
 PING_SELF_MESSAGE: "&a&l(!) &7Your ping is currently &a%ping%&7."
 PING_TARGET_MESSAGE: "&a&l(!) &7%target%'s ping is currently &a%ping%&7."
