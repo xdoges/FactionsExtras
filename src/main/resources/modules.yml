@@ -6,6 +6,8 @@ mod-mode: false
 
 jelly-legs: true
 
+chunkbusters: true
+
 autorespawn: true
 
 fixes:

@@ -18,6 +18,7 @@ public final class FactionsExtras extends JavaPlugin {
     @Override
     public void onEnable() {
         instance = this;
+
         c = new ConfigValues(this);
         managerHandler = new ManagerHandler(this);
 

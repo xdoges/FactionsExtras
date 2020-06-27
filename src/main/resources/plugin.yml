@@ -3,7 +3,7 @@ main: me.doges.fextras.FactionsExtras
 version: ${project.version}
 description: ${project.description}
 author: doges
-softdepend: [Vault, Factions]
+softdepend: [Vault, FactionsFramework]
 
 commands:
   factionsextras:
