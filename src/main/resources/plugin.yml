@@ -1,0 +1,29 @@
+name: FactionsExtras
+main: me.doges.fextras.FactionsExtras
+version: ${project.version}
+description: ${project.description}
+author: doges
+softdepend: [Vault, Factions]
+
+commands:
+  factionsextras:
+    aliases: [fextras, fe]
+    description: "FactionsExtras' core command"
+    usage: "&cUsage: /fextras <reload|version>"
+    permission: fextras.user
+    permission-message: "&cYou do not have permission to use this command."
+
+  ping:
+    description: "Check your ping!"
+    permission: fextras.commands.ping
+    permission-message: "&cYou do not have permission to use this command."
+
+  tag:
+    description: "Check a player's combat tag"
+    permission: fextras.commands.tag
+    permission-message: "&cYou do not have permission to use this command."
+
+  jellylegs:
+    description: "Toggle jelly legs!"
+    permission: fextras.commands.jellylegs
+    permission-message: "&cYou do not have permission to use this command."

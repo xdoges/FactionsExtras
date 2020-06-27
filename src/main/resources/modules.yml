@@ -1,0 +1,16 @@
+enderpearl-cooldown: true
+gapple-cooldown: true
+
+combat-tag: true
+mod-mode: false
+
+jelly-legs: true
+
+autorespawn: true
+
+fixes:
+  # Stops all types of weather and constantly
+  weather: true
+
+  # Stops players from crafting items definable in the config.yml
+  crafting: true

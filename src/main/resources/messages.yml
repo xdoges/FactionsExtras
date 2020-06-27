@@ -1,0 +1,16 @@
+NO_PERMISSION: "&4You do not have permission to use this command."
+CONSOLE_ONLY_COMMAND: "&cThis command can only be performed by console."
+PLAYER_ONLY_COMMAND: "&cConsole cannot execute this command."
+PLAYER_NOT_FOUND: "&c&l(!) &7We could not find &c%target% &7on the server."
+COMMAND_NOT_ENABLED: "&c&l(!) &7Sorry, but &c/%command% &7is currently disabled."
+
+PING_SELF_MESSAGE: "&a&l(!) &7Your ping is currently &a%ping%&7."
+PING_TARGET_MESSAGE: "&a&l(!) &7%target%'s ping is currently &a%ping%&7."
+
+COMBAT_TAG_NOT_IN_COMBAT: "&a&l(!) &7You are currently not in combat."
+COMBAT_TAG_SELF_MESSAGE: "&a&l(!) &7You are currently in combat for &c%time% &7seconds."
+COMBAT_TAG_OTHER_MESSAGE: "&a&l(!) &7%target% is currently in combat tag for &c%time% &7seconds."
+COMBAT_TAG_OTHER_NOT_IN_COMBAT: "&a&l(!) &7%target% is currently not in combat."
+
+JELLY_LEGS_ENABLED: "&a&l(!) &7You have &aenabled &7jelly legs."
+JELLY_LEGS_DISABLED: "&a&l(!) &7You have &cdisabled &7jelly legs."

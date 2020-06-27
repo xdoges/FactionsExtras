@@ -1,0 +1,116 @@
+######## ######## ##     ## ######## ########     ###     ######
+##       ##        ##   ##     ##    ##     ##   ## ##   ##    ##
+##       ##         ## ##      ##    ##     ##  ##   ##  ##
+######   ######      ###       ##    ########  ##     ##  ######
+##       ##         ## ##      ##    ##   ##   #########       ##
+##       ##        ##   ##     ##    ##    ##  ##     ## ##    ##
+##       ######## ##     ##    ##    ##     ## ##     ##  ######
+# ------------------------------------------------ #
+#  Supplies in-demand features for factions servers. #
+####################################################
+# * Version ${project.version} by Doges.
+# * Set any messages in this configuration to "" to display nothing.
+
+
+######   #######   #######  ##       ########   #######  ##      ## ##    ##  ######
+##    ## ##     ## ##     ## ##       ##     ## ##     ## ##  ##  ## ###   ## ##    ##
+##       ##     ## ##     ## ##       ##     ## ##     ## ##  ##  ## ####  ## ##
+##       ##     ## ##     ## ##       ##     ## ##     ## ##  ##  ## ## ## ##  ######
+##       ##     ## ##     ## ##       ##     ## ##     ## ##  ##  ## ##  ####       ##
+##    ## ##     ## ##     ## ##       ##     ## ##     ## ##  ##  ## ##   ### ##    ##
+######   #######   #######  ######## ########   #######   ###  ###  ##    ##  ######
+# ------------------------------------------------ #
+#  Stop those pesky spammers! #
+####################################################
+
+
+# Time (in seconds) before a player's cooldown expires and they can ender pearl again.
+# This value can be set to 0 to disable the cooldown completely, or you may disable it in "modules.yml"
+enderpearl-cooldown-time: 16
+
+# Message displayed to a player when they try to enderpearl again before their cooldown expires.
+# This message will not be displayed if "enderpearl-cooldown-time" is set to 0 or the module is disabled.
+enderpearl-cooldown-message: "&c&l(!) &7You cannot use this for another &a%time% &7seconds."
+
+# Time (in seconds) before a player's cooldown expires and they can consume another golden apple.
+# This value can be set to 0 to disable the cooldown completely.
+golden-apple-cooldown-time: 0
+
+# Message displayed to a player when they try to consume another golden apple before their cooldown expires.
+# This message will not be displayed if "golden-apple-cooldown-time" is set to 0 or the module is disabled.
+golden-apple-cooldown-message: "&c&l(!) &7You cannot eat another golden apple for another &a%time% &7seconds."
+
+# Time (in seconds) before a player's cooldown expires and they can consume another "notch" apple.
+# This value can be set to 0 to disable the cooldown completely.
+notch-apple-cooldown-time: 120
+
+# Message displayed to a player when they try to consume another enchanted golden apple before their cooldown expires.
+# This message will not be displayed if "notch-apple-cooldown -time" is set to 0 or the module is disabled.
+notch-apple-cooldown-message: "&c&l(!) &7You cannot eat another super golden apple for another %atime% &7seconds."
+
+
+  ######   #######  ##     ## ########     ###    ######## ########    ###     ######
+  ##    ## ##     ## ###   ### ##     ##   ## ##      ##       ##      ## ##   ##    ##
+  ##       ##     ## #### #### ##     ##  ##   ##     ##       ##     ##   ##  ##
+  ##       ##     ## ## ### ## ########  ##     ##    ##       ##    ##     ## ##   ####
+  ##       ##     ## ##     ## ##     ## #########    ##       ##    ######### ##    ##
+  ##    ## ##     ## ##     ## ##     ## ##     ##    ##       ##    ##     ## ##    ##
+######   #######  ##     ## ########  ##     ##    ##       ##    ##     ##  ######
+# -------------------------------------- #
+# Stop those pesky combat loggers! #
+##########################################
+
+# Time (in seconds) before a player's tag expires and they can log out safely
+# Notice: Tag time is reset when a player takes (or deals) PvP damage
+# This value can be set to -1 to disable tagging completely.
+combat-tag-expire-delay: 15
+
+# Time (in seconds) before a player's NPC despawns.
+# Notice: Tag time is reset when a NPC takes damage.
+combat-tag-npc-despawn-time: 10
+
+# Message displayed to a player when they get combat tagged from dealing PvP damage.
+# This message can be formatted with the following variables:
+# - %player% - The player who the PvP damage was inflicted to
+# - %time% - The value of "combat-tag-expire-delay"
+combat-tag-damager-message: "&c&l(!) &7You have tagged &c%player% &7in combat for &c%time% &7seconds. Do not log out."
+
+# Message displayed to a player when they get combat tagged from dealing PvP damage.
+# This message can be formatted with the following variables:
+# - %player% - The player who the PvP damage was inflicted to
+# - %time% - The value of "combat-tag-expire-delay"
+combat-tag-damaged-message: "&c&l(!) &7You have been tagged by &c%player% &7for &c%time% &7seconds. Do not log out."
+
+# List of worlds where combat tag's functionality are disabled
+# For all worlds, disable "combat-tag" in modules.yml
+combat-tag-disabled-worlds:
+  - world_the_end
+  - world_nether
+
+######## #### ##     ## ########  ######
+##        ##   ##   ##  ##       ##    ##
+##        ##    ## ##   ##       ##
+######    ##     ###    ######    ######
+##        ##    ## ##   ##             ##
+##        ##   ##   ##  ##       ##    ##
+##       #### ##     ## ########  ######
+
+# Disable natural mob spawning?
+disable-natural-mob-spawning: false
+
+# Disable wither spawning?
+disable-wither-spawning: true
+
+# Disable bow boosting?
+disable-bow-boosting: true
+bow-boosting-message: "&cBow boosting is disabled on this server."
+
+# "fixes.crafting" in modules.yml
+# Disables crafting of definable items.
+# https://helpch.at/docs/1.8/org/bukkit/Material.html
+crafting:
+  # This message can be formatted with the following variables:
+  # - %item% - The type of item the player cannnot craft.
+  message: "&c&l(!) &7You are &cnot allowed &7to craft &c%item%s&7."
+  disabled:
+    - hopper
