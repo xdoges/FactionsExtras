@@ -26,21 +26,24 @@ public class JellylegsCommand extends CommandExecutor {
     public void execute(CommandSender sender, String[] args) {
         Player player = (Player) sender;
 
-        // Check if the module is enabled
-        if (plugin.getManagerHandler().getModuleManager().isEnabled("jelly-legs")) {
-            JellyLegs main = (JellyLegs) plugin.getManagerHandler().getModuleManager().getModuleFromName("jelly-legs");
+        // We should first check if the module is actually enabled, if not, we're gonna just return that the command is not enabled..
+        if (!plugin.getManagerHandler().getModuleManager().isEnabled("jelly-legs")) {
+            player.sendMessage(settings.commandNotEnabled(getCommand()));
+            return;
+        }
 
-            if (main.getUsers().contains(player.getUniqueId())) {
-                main.getUsers().remove(player.getUniqueId());
-                player.sendMessage(settings.disabledJellyLegs());
-                player.playSound(player.getLocation(), Sound.NOTE_BASS, 1, 1);
-            } else {
-                main.getUsers().add(player.getUniqueId());
-                player.sendMessage(settings.enabledJellyLegs());
-                player.playSound(player.getLocation(), Sound.NOTE_BASS, 1, 1);
-            }
+        JellyLegs main = (JellyLegs) plugin.getManagerHandler().getModuleManager().getModuleFromName("jelly-legs");
+
+        // check if they are in the user list, and if it's false (hence !), we add them to it
+        if (!main.getUsers().contains(player.getUniqueId())) {
+            main.getUsers().add(player.getUniqueId());
+            player.sendMessage(settings.enabledJellyLegs());
+            player.playSound(player.getLocation(), Sound.NOTE_BASS, 1, 1);
         } else {
-            player.sendMessage(settings.commandNotEnabled(this.getCommand()));
+            // if, on the other hand, they weree in the user list, they are re-running the command to disable jelly legs
+            main.getUsers().remove(player.getUniqueId());
+            player.sendMessage(settings.disabledJellyLegs());
+            player.playSound(player.getLocation(), Sound.NOTE_BASS, 1, 1);
         }
     }
 }

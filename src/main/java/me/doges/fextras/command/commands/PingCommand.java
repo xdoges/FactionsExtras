@@ -36,6 +36,7 @@ public class PingCommand extends CommandExecutor {
             int ping = ReflectionUtil.getPlayerPing(target);
 
             player.sendMessage(messages.pingTarget(target, ping));
+
         } else if (args.length == 0) {
 
             int ping = ReflectionUtil.getPlayerPing(player);
