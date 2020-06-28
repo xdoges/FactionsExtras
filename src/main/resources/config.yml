@@ -48,6 +48,16 @@ notch-apple-cooldown-time: 120
 # This message will not be displayed if "notch-apple-cooldown -time" is set to 0 or the module is disabled.
 notch-apple-cooldown-message: "&c&l(!) &7You cannot eat another super golden apple for another %atime% &7seconds."
 
+######  ##     ##  #######   ######  ##    ## ##      ##    ###    ##     ## ########
+##    ## ##     ## ##     ## ##    ## ##   ##  ##  ##  ##   ## ##   ##     ## ##
+##       ##     ## ##     ## ##       ##  ##   ##  ##  ##  ##   ##  ##     ## ##
+######  ######### ##     ## ##       #####    ##  ##  ## ##     ## ##     ## ######
+## ##     ## ##     ## ##       ##  ##   ##  ##  ## #########  ##   ##  ##
+##    ## ##     ## ##     ## ##    ## ##   ##  ##  ##  ## ##     ##   ## ##   ##
+######  ##     ##  #######   ######  ##    ##  ###  ###  ##     ##    ###    ########
+
+# If set to true, players will only be able to use shockwave tools in their own faction territory.
+shockwave-only-in-faction-territory: true
 
   ######   #######  ##     ## ########     ###    ######## ########    ###     ######
   ##    ## ##     ## ###   ### ##     ##   ## ##      ##       ##      ## ##   ##    ##
